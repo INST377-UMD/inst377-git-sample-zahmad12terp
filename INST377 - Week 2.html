@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>INST377 - HTML Form</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        .color-box{
+            background-color: rgb(255, 170, 127);
+            color: brown;
+            margin-top: 100px;
+        }
+
+        input{
+            background-color: blue;
+            color:aliceblue;
+        }
+        #date {
+            font-size: 50;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="color-box">
+        <h1>THis is a colorful box</h1>
+    </div>
+    <h1>Contact Me!</h1>
+    
+    <form name="contactForm" method="get" action="INST377 - Week 2 FormSuccess.html">
+        <!--Name Fields-->
+        <label for="firstName">First Name: </label>
+        <input type="text" id="firstName" placeholder="John" required> 
+        <br>
+
+        <label for="lastName">Last Name: </label>
+        <input type="text" id="lastName" placeholder="Doe"> 
+        <br>
+        
+        <!--Pick a Date-->
+        <label for="date">Select a Date: </label>
+        <input type="date" id="date"> 
+        <br><hr>
+
+        <!--Inquiry Reason-->
+        <label for="reason">Inquiry Type: </label> <br>
+        <input type="radio" name="reason">Media Inquires <br>
+        <input type="radio" name="reason">General Inquires <br>
+        <input type="radio" name="reason">Corporate Inquires <br>
+        <br><hr>
+
+        <!--Address-->
+        <h3>Address</h3>
+        <label for="street">Street</label>
+        <input type="text" id="street"> <br>
+        <label for="city">City</label>
+        <input type="text" id="city"> <br>
+        <label for="state">State</label>
+        <input type="text" id="state"><br>
+        <label for="zip">Zip Code</label>
+        <input type="text" id="zip">
+        <br><hr>
+
+        <!--University Affiliation-->
+        <label for="university">What university are you affiliated with? </label>
+        <select id="university" name="university" required>
+            <option hidden disabled selected value>--Select an option--</option>
+            <option value="umd">UMD</option>
+            <option value="umd">UMBC</option>
+            <option value="umd">Other</option>
+        </select>
+        <br><hr>
+
+        <!--Email Address-->
+        <label for="email">What is the best email to reach you?</label>
+        <input type="email" id="email" required> <br><hr>
+
+        <input type="submit" value="Submit">
+    
+    </form>
+</body>
+</html>
